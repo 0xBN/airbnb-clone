@@ -1,0 +1,17 @@
+
+
+.airCoverLogo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.airCoverLogo>div:nth-child(1) {
+  color: red;
+
+}
+.airCoverLogo>div:nth-child(2) {
+  color: var(--font-color);
+}

@@ -57,6 +57,17 @@ How to proceed:
 Main Features to cover:
 
 - Register and sign in
+- View and browse listings
+- Book a stay
+- View a host / user page
 - Create listings
-- View listings
-- Search through listings
+- Data Example for user and listing (root/exampleData.js)
+- Map (use GoogleMaps API)
+
+What to work on (in order):
+
+- Home Page
+- Listing Page
+- User Page
+- Header / Nav
+- Footer

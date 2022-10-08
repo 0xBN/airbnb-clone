@@ -1,0 +1,73 @@
+.container {
+  width: 100%;
+}
+
+.buttonContainer {
+  /* background-color: navy; */
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--subfont-color);
+  border-radius: 50px;
+  padding: 4px 6px;
+  /* gap: 2rem; */
+  width: 70%;
+  margin: auto;
+}
+
+.buttonLeft,
+.buttonMiddle,
+.buttonRight {
+  border:none;
+  background-color: transparent;
+  color: var(--font-color);
+  cursor: pointer;
+  margin:0;
+  /* padding:0; */
+  /* background-color: pink; */
+  border-radius: 999px;
+  
+}
+
+.buttonRight {
+  height:100%;
+  /* width: 100%; */
+  padding: 0 0 0 .5rem;
+
+}
+
+
+
+.buttonLeft {
+  /* padding: 0 0 0 1.2rem; */
+
+}
+
+.buttonMiddle {
+  
+}
+
+.buttonRight {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.searchButton {
+  background-color: var(--primary-accent);
+  border:none;
+  border-radius: 999px;
+  color: white;
+  padding: 4px;
+}
+
+
+.lighter {
+  color: var(--subfont-color)
+}
+
+.verticalLine {
+  color:transparent;
+  border-left: var(--border-format);
+  margin-left: -3px;
+}

@@ -1,0 +1,21 @@
+.test {
+  color: pink;
+}
+
+
+
+.sectionTitle {
+  font-weight:var(--section-title-fw);
+  font-size: var(--section-title-fs);
+}
+
+
+
+hr {
+ border: 1px solid var(--thin-lines);
+ /* opacity: .2; */
+ margin-top: var(--hr-gap);
+ margin-bottom: var(--hr-gap);
+}
+
+

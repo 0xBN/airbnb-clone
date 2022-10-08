@@ -1,0 +1,22 @@
+.sectionTitle {
+  font-weight:var(--section-title-fw);
+  font-size: var(--section-title-fs);
+}
+
+
+.capacityAndHost {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.rightCapacityAndHost>img {
+  width: 60px;
+  border-radius: 999px;
+}
+  
+.capacityDetails {
+  display: flex;
+  gap: var(--horizontal-gap);
+}

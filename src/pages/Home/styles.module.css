@@ -1,0 +1,55 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-width: var(--max-width);
+  margin-bottom: var(--margin-bottom);
+}
+
+/* .headerContainer {
+  position:relative
+}
+
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-width: var(--max-width);
+} */
+
+.propertyCards {
+  margin-top: var(--margin-top);
+  
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  row-gap: 40px;
+  column-gap: 24px;
+  
+  /* disabled */
+  /* margin-top: var(--header-height); */
+  /* border: solid white 5px; */
+}
+
+.showMap {
+  bottom: 75px;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+
+
+}
+
+.showMap>button{
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: bold;
+  border: solid black 1px;
+  border-radius: 20px;
+  padding: 10px 15px;
+  gap: 5px;
+  cursor: pointer;
+  justify-content: center;
+}

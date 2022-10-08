@@ -1,0 +1,48 @@
+.container{
+  /* position:fixed; */
+  /* top:0; */
+  /* left:0; */
+  /* width: 100vw; */
+  max-width: var(--max-width);
+  background-color: var(--background-color);
+  height: var(--header-height);
+  /* padding: 2rem 0; */
+  z-index: 1;
+  position: sticky;
+  top:0;
+  margin-top: 1rem;
+}
+
+.headerNav {
+max-width: var(--max-width);
+margin:auto;
+display: grid;
+grid-template-columns: repeat(3,1fr);
+grid-template-rows: repeat(2,1fr);
+align-items: center;
+}
+
+
+
+.logo img {
+  width: 100px;
+}
+
+.searchButton {
+  justify-self: center;
+}
+
+.loginWidget {
+  justify-self: right;
+}
+
+
+.sideScroll {
+  grid-column: 1/-1;
+  background-color: #333;
+  width: 100%;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  
+}

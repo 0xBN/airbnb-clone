@@ -1,0 +1,60 @@
+.container {
+  /* background-color: red; */
+}
+
+.currentMonth,
+.nextMonth {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  gap: 1rem;
+}
+
+.doubleCalendarContainer {
+  display: flex;
+  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, .7fr));
+  column-gap: 110px;
+  row-gap: 30px;
+  align-items: center;
+  justify-items: center;
+  width: 90%;
+  margin:0;
+}
+
+.calendarGrid {
+  /* background-color: gray; */
+  display: grid;
+  grid-template-columns: repeat(7,1fr);
+  justify-items: center;
+  align-self: center;
+
+}
+
+
+
+.day {
+  /* background-color: darkblue; */
+  text-align: center;
+  align-self: center;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 999px;
+  margin: .2rem;
+  border: none;
+}
+
+.day:hover {
+  border: solid 1px var(--subfont-color);
+}
+
+
+
+.dayOfWeek 
+{
+  /* background-color: red; */
+  color: var(--subfont-color);
+  font-weight: bold;
+  padding: 1rem 0;
+}

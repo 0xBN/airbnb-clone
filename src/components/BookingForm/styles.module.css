@@ -1,0 +1,118 @@
+.container {
+  /* background-color:gray; */
+  min-width: var(--card-width);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid var(--thin-lines);
+  border-radius: var(--standard-border-radius);
+  padding: .5rem;
+}
+
+.checkAvailabilityHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 1rem;
+}
+
+.headerLeft {
+  display: flex;
+  align-items: baseline;
+  gap: var(--icon-word-gap);
+}
+
+.headerLeft>div:first-child {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.headerLeft>div:nth-child(2) {
+  font-size: 1.3rem;
+}
+
+.headerRight {
+display: flex;
+gap: var(--icon-word-gap);
+align-items: center;
+}
+
+
+.headerRight>div:first-child{
+  color:var(--font-color);
+  font-size: 20px;
+}
+
+.headerRight>div:nth-child(4) {
+  color: var(--subfont-color);
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.guestDetails {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  width: 90%;
+}
+
+.checkIn,
+.checkOut {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--thin-lines);
+  padding: 1rem;
+}
+
+.checkIn>div:first-child,
+.checkOut>div:first-child,
+.specificGuests>div:first-child {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.checkIn>div:nth-child(2),
+.checkOut>div:nth-child(2) {
+  /* font-weight: bold; */
+  color: var(--subfont-color);
+  font-size: 1rem;
+}
+
+
+
+.checkIn {
+  border-top-left-radius: var(--standard-border-radius);
+}
+
+.checkOut {
+  border-top-right-radius: var(--standard-border-radius);
+}
+
+.guests {
+  grid-column: 1/-1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid var(--thin-lines);
+  border-bottom-left-radius: var(--standard-border-radius);
+  border-bottom-right-radius: var(--standard-border-radius);
+  padding: 1rem;
+}
+
+
+
+.availableButtonArea {
+ display: flex;
+ justify-content: center;
+ width: 100%;
+ /* background-color: pink; */
+}
+
+.checkAvailabilityButton {
+  background-color: var(--bright-accent);
+  border: none;
+  font-size: 1.2rem;
+  width: 90%;
+}
+

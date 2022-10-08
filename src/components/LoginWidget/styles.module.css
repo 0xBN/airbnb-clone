@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  color: var(--font-color);
+  font-weight: bold;
+  gap: 2rem;
+  align-items: center;
+}
+
+.profileButton {
+  color: var(--subfont-color);
+  border: solid 1px var(--subfont-color);
+  cursor: pointer;
+  border-radius: 999px;
+  padding: .3rem .3rem .3rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.profileButton>span:nth-child(2) {
+  font-size: 40px;
+
+}

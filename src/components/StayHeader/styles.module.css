@@ -1,0 +1,35 @@
+.placeDetails {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.placeDetailsRight,
+.placeDetailsLeft {
+  display: flex;
+  gap: var(--horizontal-gap);
+}
+
+
+.placeDetailsRight>button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: var(--font-color);
+  gap: var(--icon-word-gap);
+  margin:0;
+  padding:0;
+
+}
+
+.star {
+  color: var(--secondary-accent);
+}
+
+.rating {
+  display: flex;
+}
+

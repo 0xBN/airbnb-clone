@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.left>span {
+  font-size: 2rem;
+}
+
+.right>.title {
+  font-weight: bold;
+}
+
+.right>.details {
+  font-weight: 100;
+  color: var(--subfont-color);
+}
+
+.right>.title2 {
+  /* font-weight: bold; */
+}

@@ -1,0 +1,175 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: var(--card-width);
+}
+
+.sliderWrapper {
+  width: var(--card-width);
+  position: relative;
+  overflow: hidden;
+  
+}
+
+.slidesContainer {
+  height: var(--card-width);;
+  width: var(--card-width);;
+  display: flex;
+  list-style: none;
+  margin:0;
+  padding:0;
+  overflow:scroll;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style:none;
+  border-radius: 15px;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  flex: 1 0 100%;
+  overflow-y:hidden
+  
+}
+
+.slide img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  
+}
+
+.slidesContainer::-webkit-scrollbar { 
+  width: 0;
+  height: 0;
+}
+
+.slideArrowNext,
+.slideArrowPrev
+ {
+  position: absolute;
+  display: flex;
+  top:0;
+  bottom:0;
+  margin: auto;
+  height: 2rem;
+  width: 2rem;
+  background-color: black;
+  color: white;
+  border-radius: 999px;
+  border: none;  
+  cursor: pointer;
+  opacity: .3;
+  transition: opacity 300ms;
+}
+
+
+.slideArrowNext:hover,
+.slideArrowNext:active,
+.slideArrowPrev:hover,
+.slideArrowPrev:active  {
+  opacity:1;
+  scale: 1.05;
+}
+
+.slideArrowPrev {
+  left: 0;
+  padding: .25rem 0 0 .25rem;
+}
+
+.slideArrowNext {
+  right: 0;
+  padding: .25rem 0 0 .25rem;
+}
+
+.star {
+  color: gray;
+  font-size: 36px;
+  
+}
+
+.star:hover {
+  color: rgba(255, 0, 0,0.5);
+}
+
+
+
+.favorited {
+  color: red;
+  font-size: 36px;
+}
+
+
+.favorite {
+  font-size: 36px;
+  position: absolute;
+  display: flex;
+  top:0;
+  right:0;
+  margin: 1rem;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  /* background-color: red; */
+  width: 11%;
+  height: 11%;
+  /* z-index: 1; */
+  
+}
+
+
+/* .favorite {
+  font-size: 36px;
+  position: absolute;
+  display: flex;
+  top:0;
+  right:0;
+  margin: 1rem;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  
+} */
+
+
+
+
+
+
+.firstRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.location {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--font-color)
+}
+
+.rating {
+  color: var(--font-color);
+  display: flex;
+  align-items: center;
+  gap:5px;
+}
+
+
+
+.locationDetails {
+  color: var(--subfont-color);
+}
+
+
+
+.stayRate {
+  margin-top: .25rem;
+  color:var(--font-color)
+}
+
+.nightCost {
+  font-weight: bold;
+}

@@ -1,0 +1,64 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.reviewHeader {
+display: flex;
+gap: var(--icon-word-gap);
+font-size: var(--section-title-fs);
+font-weight: var(--section-title-fw);
+}
+
+.reviewScores {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  row-gap: 1rem;
+  column-gap: 4rem;
+}
+
+.reviewLine {
+  display: flex;
+  justify-content: space-between;
+}
+
+.userPic>img {
+  width: 40px;
+  border-radius: 999px;
+}
+
+.pictureNameDate {
+  display: flex;
+  align-items: start;
+  gap: 15px;
+}
+
+.reviewItem {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.reviewContainer {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  column-gap: 4rem;
+  row-gap: 2rem;
+}
+
+.usernameAndDate {
+  display: flex;
+  flex-direction: column;
+}
+
+.username {
+  font-weight: bold;
+  /* margin: -5px 0 */
+}
+
+.reviewDate {
+  font-weight: normal;
+  color: var(--subfont-color);
+}
+

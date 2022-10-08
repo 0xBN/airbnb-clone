@@ -1,0 +1,91 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--title-section-gap);
+}
+
+
+.sectionTitle {
+  font-weight:var(--section-title-fw);
+  font-size: var(--section-title-fs);
+}
+
+.minNights {
+  color: var(--subfont-color);
+}
+
+.doubleCalendarContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, .7fr));
+  column-gap: 110px;
+  row-gap: 30px;
+  align-items: center;
+  justify-items: center;
+  width: 90%;
+  margin:0;
+}
+
+
+.calendarContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+  gap: var(--horizontal-gap);
+}
+
+.calendarGrid {
+  display: grid;
+  grid-template-columns: repeat(7,1fr);
+  justify-items: center;
+  align-self: center;
+}
+
+
+
+.currentMonth,
+.nextMonth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  gap: 1rem;
+}
+
+.daysOfWeek {
+display: flex;
+justify-content: space-evenly;
+color: var(--subfont-color);
+font-weight: bold;
+}
+
+.dayOfWeek {
+  color: var(--subfont-color);
+  font-weight: bold;
+  padding: 1rem 0;
+}
+
+
+.day {
+  text-align: center;
+  align-self: center;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 999px;
+  margin: .2rem;
+  border: none;
+}
+
+.day:hover {
+  border: 1px solid var(--subfont-color);
+}
+
+
+
+
+
+
+
+
