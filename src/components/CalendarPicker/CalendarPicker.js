@@ -22,7 +22,6 @@ export const CalendarPicker = ({ city, minNights }) => {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.test}>CalendarPicker</h1>
       <div className={styles.sectionTitle}>Select checkin-in date</div>
       <div className={styles.minNights}>Minimum stay: {minNights} nights</div>
       {/* <div className={styles.sectionTitle}>X nights in {city}</div> */}
@@ -139,7 +138,7 @@ export const CalendarPicker = ({ city, minNights }) => {
         </div>
       </div>
 
-      <div>
+      <div className={styles.clearDates}>
         <button>Clear dates</button>
       </div>
     </div>

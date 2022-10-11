@@ -18,3 +18,7 @@ export * from './CalendarPicker2';
 export * from './BookingForm';
 export * from './ReviewSection';
 export * from './Map';
+export * from './HostSection';
+export * from './ThingsToKnow';
+export * from './ExtendedFooter';
+export * from './ProfilePicture';

@@ -1,0 +1,18 @@
+.container {  
+}
+
+.columnsContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.columnTitle {
+  font-weight: bold;
+}
+
+.column1>div,
+.column2>div,
+.column3>div,
+.column4>div {
+  margin-bottom: 1rem;
+}

@@ -4,8 +4,12 @@
   gap: .5rem;
 }
 
-.left>span {
+.leftLarge>span {
   font-size: 2rem;
+}
+
+.leftSmall>span {
+  font-size: 1rem;
 }
 
 .right>.title {

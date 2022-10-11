@@ -1,40 +1,44 @@
 import React from 'react';
 import styles from './styles.module.css';
-import { users } from '../../exampleData';
 import { nanoid } from 'nanoid';
+import { ProfilePicture } from 'components';
 
-export const ReviewSection = ({ rating, reviewCount, reviews }) => {
-  const getUser = (userId) => {
-    const { profilePicture, userName } = users[userId].user;
-
-    return [userName, profilePicture];
-  };
-
-  const show = (reviews) => {
+export const ReviewSection = ({
+  rating,
+  reviewCount,
+  reviews,
+  reviewsData,
+  specificReviews,
+  usersData,
+}) => {
+  const filter = (reviews) => {
     const list = [];
-    for (let key in reviews) {
-      const { customer, review, reviewMonth, reviewYear } = reviews[key];
-      let img = getUser(customer)[1];
-      let username = getUser(customer)[0];
+    for (let review of specificReviews) {
+      const { user, reviewComment, month, year } = reviewsData[review];
+      let img = usersData[user].user.profilePicture;
+      let username = usersData[user].user.userName;
+
       list.push(
         <div key={nanoid()} className={styles.reviewItem}>
           <div className={styles.pictureNameDate}>
             <div className={styles.userPic}>
-              <img src={img} alt='' />
+              <ProfilePicture id={user} img={img} />
             </div>
+
             <div className={styles.usernameAndDate}>
               <div className={styles.username}>{username}</div>
               <div className={styles.reviewDate}>
-                {reviewMonth} {reviewYear}
+                {month} {year}
               </div>
             </div>
           </div>
-          <div>{review}</div>
+          <div>{reviewComment}</div>
         </div>
       );
     }
     return list;
   };
+
   return (
     <div className={styles.container}>
       <div className={styles.reviewHeader}>
@@ -71,7 +75,7 @@ export const ReviewSection = ({ rating, reviewCount, reviews }) => {
           <div>5.0</div>
         </div>
       </div>
-      <div className={styles.reviewContainer}>{show(reviews)}</div>
+      <div className={styles.reviewContainer}>{filter(reviews)}</div>
     </div>
   );
 };

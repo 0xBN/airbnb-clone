@@ -76,16 +76,33 @@ font-weight: bold;
   border-radius: 999px;
   margin: .2rem;
   border: none;
+  background-color: transparent;
+  color: var(--font-color);
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+  border: 1px solid var(--thin-lines)
 }
 
 .day:hover {
   border: 1px solid var(--subfont-color);
 }
 
+.clearDates {
+  /* background-color: pink; */
+  display: flex;
+  justify-content: end;
+}
 
-
-
-
+.clearDates>button {
+  background-color: transparent;
+  color: var(--font-color);
+  font-weight: bold;
+  border: none;
+  text-decoration: underline;
+  font-size: 1.2rem;
+  
+}
 
 
 

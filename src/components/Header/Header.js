@@ -1,9 +1,8 @@
 import styles from './styles.module.css';
 import logo from '../../shared/logo.svg';
 import { SearchWidget, LoginWidget, SideScrollWidget } from 'components';
-import { scrollBarOptions } from '../../exampleData';
 
-export const Header = ({ slider }) => {
+export const Header = ({ showSlider, scrollBar }) => {
   return (
     <div className={styles.container}>
       <div className={styles.headerNav}>
@@ -18,15 +17,9 @@ export const Header = ({ slider }) => {
         <div className={styles.loginWidget}>
           <LoginWidget />
         </div>
-        {slider && (
+        {showSlider && (
           <div className={styles.sideScroll}>
-            <SideScrollWidget data={scrollBarOptions} />
-          </div>
-        )}
-        {!slider && (
-          <div className={styles.cat}>
-            {/* <br /> */}
-            {/* <br /> */}
+            <SideScrollWidget data={scrollBar} />
           </div>
         )}
       </div>

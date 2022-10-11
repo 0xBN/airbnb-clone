@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './styles.module.css';
-import { listings } from '../../exampleData';
+import { listings as listings2, users } from '../../exampleData';
 import {
   FeatureIcon,
   SleepArrangementSlides,
@@ -12,36 +12,32 @@ import {
 } from 'components';
 import { nanoid } from 'nanoid';
 
-export const ListingDetails = ({ listing_id }) => {
+export const ListingDetails = ({ listing_id, listingsData }) => {
+  // return;
   const { placeName, city, state, country, stayType, aboutLocation } =
-    listings[listing_id].location;
-  const { rating, reviews } = listings[listing_id].feedbackScore;
-  const images = listings[listing_id].images;
-  const { hostName, pic } = listings[listing_id].host;
+    listingsData[listing_id].location;
+  const { rating, reviews } = listingsData[listing_id].feedbackScore;
+  const images = listingsData[listing_id].images;
+  const { userID, pic } = listingsData[listing_id].host;
   const { guestCapacity, bedroomCount, bedCount, bathCount } =
-    listings[listing_id].capacity;
+    listingsData[listing_id].capacity;
+
+  const { userName, profilePicture } = users[userID].user;
 
   const { USDperNight, cleaningFee, serviceFee, minNights } =
-    listings[listing_id].cost;
+    listingsData[listing_id].cost;
 
-  const show = (list) => {
-    const elementList = [];
-    for (let key in list) {
-      const { name, icon } = list[key];
-      elementList.push(<FeatureIcon icon={icon} title={name} key={nanoid()} />);
-    }
-    return elementList;
-  };
   return (
     <div className={styles.container}>
       <StayOverview
         stayType={stayType}
-        hostName={hostName}
+        userName={userName}
+        userID={userID}
         guestCapacity={guestCapacity}
         bedroomCount={bedroomCount}
         bedCount={bedCount}
         bathCount={bathCount}
-        pic={pic}
+        profilePicture={profilePicture}
       />
 
       <hr />
@@ -53,7 +49,7 @@ export const ListingDetails = ({ listing_id }) => {
         />
         <FeatureIcon
           icon='military_tech'
-          title={`${hostName} is a Superhost`}
+          title={`${userName} is a Superhost`}
           details='Superhosts are experienced, highly rated hosts who are committed to providing great stays for guests.
           '
         />
@@ -70,11 +66,11 @@ export const ListingDetails = ({ listing_id }) => {
         <hr />
         <div>
           <SleepArrangementSlides
-            sleepArrangement={listings[listing_id].sleepArrangements}
+            sleepArrangement={listingsData[listing_id].sleepArrangements}
           />
         </div>
         <hr />
-        <AmenitiesSection amenities={listings[listing_id].amenities} />
+        <AmenitiesSection amenities={listingsData[listing_id].amenities} />
         <hr />
         <CalendarPicker city={city} minNights={minNights} />
       </div>

@@ -19,7 +19,6 @@
 
 .propertyCards {
   margin-top: var(--margin-top);
-  
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   row-gap: 40px;

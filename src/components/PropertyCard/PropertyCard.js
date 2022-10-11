@@ -3,11 +3,20 @@ import styles from './styles.module.css';
 import { nanoid } from 'nanoid';
 import { listings } from '../../exampleData';
 
-export const PropertyCard = ({ images, id }) => {
-  const { city, state, closestPark } = listings[id].location;
-  const { USDperNight } = listings[id].cost;
-  const { rating } = listings[id].feedbackScore;
+export const PropertyCard = ({ images, id, listingsData }) => {
   const [favorite, setFavorite] = React.useState(false);
+
+  // Local database: Remove this eventually
+  // const { city, state, closestPark } = listings[id].location;
+  // const { USDperNight } = listings[id].cost;
+  // const { rating } = listings[id].feedbackScore;
+
+  // Converted for FireBase: final database
+  if (!listingsData[id]) return;
+  const { city, state, closestPark } = listingsData[id].location;
+  const { USDperNight } = listingsData[id].cost;
+  const { rating } = listingsData[id].feedbackScore;
+  // console.log(city);
 
   const show = (images) => {
     const imageList = [];

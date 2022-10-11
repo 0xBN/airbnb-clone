@@ -23,7 +23,7 @@ font-weight: var(--section-title-fw);
   justify-content: space-between;
 }
 
-.userPic>img {
+.userPic>a>img {
   width: 40px;
   border-radius: 999px;
 }
@@ -43,7 +43,7 @@ font-weight: var(--section-title-fw);
 .reviewContainer {
   display: grid;
   grid-template-columns: repeat(2,1fr);
-  column-gap: 4rem;
+  column-gap: var(--column-gap);
   row-gap: 2rem;
 }
 

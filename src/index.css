@@ -43,6 +43,7 @@ body {
   --icon-word-gap: 5px;
   --standard-border-radius: 10px;
   --hr-gap: 1.5rem;
+  --column-gap: 4rem;
 
   --section-title-fw: 600;
   --section-title-fs: 1.2rem;
@@ -79,18 +80,22 @@ body {
   --bright-accent: rgb(155, 0, 36);
   --primary-accent: #531118;
   --secondary-accent: #FF385C;
+  --skeleton-lines: #333;
+  --shimmer-color: rgba(160, 160, 160, 0.2);
   
 
   /* Light Mode */
 
-  /* --background-color: white;
+  --background-color: white;
   --font-color: black;
   --hover-font-color: rgba(0,0,0,.5);
   --subfont-color: gray;
+  --thin-lines: rgb(128, 128, 128,0.2);
   --opacity-background: rgba(255,255,255,.9);
   --primary-accent: #FF385C;
-  --secondary-accent: black; */
-
+  --secondary-accent: black;
+  --skeleton-lines: rgb(216, 216, 216);
+  --shimmer-color: white;
 
 
   background-color: var(--background-color);
@@ -107,4 +112,15 @@ code {
 
 .hidden {
   display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.sectionTitle {
+  font-weight:var(--section-title-fw);
+  font-size: var(--section-title-fs);
+  /* margin-bottom: var(--title-section-gap); */
+  margin-bottom: 1rem;
 }

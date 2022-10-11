@@ -67,15 +67,8 @@ width: 50px;
   background-color: darkblue;
 }
 
-.thingsToKnowContainer {
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-}
 
-.extendedFooter {
-  display: grid;
-  grid-template-columns: repeat(4,1fr);
-}
+
 
 .stickyCalendar {
   height: 300px;

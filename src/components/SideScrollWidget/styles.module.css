@@ -31,12 +31,8 @@
   display: none;
 }
 
-[type='filter'],
-[type='button'] {
-  cursor: pointer;
-}
 
-[type='button'] {
+.container>[type='button'] {
   border-radius: 999px;
   padding:0;
   border: none;
@@ -52,7 +48,7 @@
   
 }
 
-a {
+.icons {
   color:var(--hover-font-color);
   font-size: 1rem;
   text-decoration: none;
@@ -61,7 +57,7 @@ a {
   gap: 2px;
 }
 
-a:hover {
+.icons:hover {
   color: var(--font-color);
 }
 

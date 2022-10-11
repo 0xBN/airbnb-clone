@@ -1,0 +1,113 @@
+.container {
+  margin-bottom: var(--margin-bottom);
+}
+
+.profileContainer {
+  display: flex;
+  gap: var(--column-gap);
+}
+
+.listingContainer{
+  display: flex;
+  gap: var(--column-gap);
+}
+
+.listings>a>img {
+  width: 250px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.listings>a {
+  text-decoration: none;
+  color: var(--font-color)
+}
+
+.ratings {
+  display: flex;
+}
+
+.leftSide {
+  width: 25%;
+}
+
+.leftSideBox {
+  padding: 1rem;
+  border: solid 1px var(--thin-lines);
+  border-radius: var(--standard-border-radius);
+}
+
+.profilePicture {
+  padding: 1rem 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.profilePicture>img {
+  width: 150px;
+  border-radius: 999px;
+}
+
+.totalReviews, 
+.identityVerified {
+  display: flex;
+  align-items: center;
+}
+
+.leftSideBox>hr {
+  margin: 2rem auto;
+}
+
+.reviewsAndIdentity {
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.confirmedIdEmailPhone {
+  margin-bottom: 1rem;
+}
+
+.confirmedIdEmailPhone>div:first-child {
+  font-size: 1.25rem; 
+  font-weight: bold;
+  margin-bottom: .25rem;
+}
+
+.confirmedIdEmailPhone>div:nth-child(2),
+.confirmedIdEmailPhone>div:nth-child(3),
+.confirmedIdEmailPhone>div:nth-child(4) {
+  padding: .25rem 0;
+}
+
+.rightSide {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem
+}
+
+.greeter>div:first-child {
+  font-size: 3rem;
+}
+
+.greeter>div:nth-child(2) {
+  color: var(--subfont-color);
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.about>div:first-child{
+  font-size: 1.5rem;
+}
+
+.hostDetails {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem
+}
+

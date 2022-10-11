@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  justify-content: center;
+  gap: var(--column-gap);
+
+}
+
+.oopsTitle {
+  font-size: 5rem;
+}

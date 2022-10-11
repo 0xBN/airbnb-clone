@@ -20,11 +20,13 @@
   border:none;
   background-color: transparent;
   color: var(--font-color);
+  
   cursor: pointer;
   margin:0;
-  /* padding:0; */
-  /* background-color: pink; */
   border-radius: 999px;
+  cursor: pointer;
+  height: 2rem;
+  width: 10rem;
   
 }
 
@@ -68,6 +70,6 @@
 
 .verticalLine {
   color:transparent;
-  border-left: var(--border-format);
+  border-left: 1px solid var(--font-color);
   margin-left: -3px;
 }

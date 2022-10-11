@@ -42,7 +42,7 @@ export const SleepArrangementSlides = ({ sleepArrangement }) => {
   };
   return (
     <div className={styles.container}>
-      <div className={styles.sectionTitle}>Where you'll sleep</div>
+      <div className='sectionTitle'>Where you'll sleep</div>
       <div className={styles.sliderWrapper}>
         <div data-set-slides-container className={styles.slidesContainer}>
           {show(sleepArrangement)}

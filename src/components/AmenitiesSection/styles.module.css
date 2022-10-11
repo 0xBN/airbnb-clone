@@ -14,7 +14,7 @@
   gap: var(--title-section-gap);
 }
 
-button {
+.amenitiesButton {
   background-color: var(--background-color);
   color: var(--font-color);
   border: solid 1px var(--font-color); 
@@ -22,7 +22,7 @@ button {
   width: 13rem;
   font-size: 1rem;
   font-weight: bold;
-  border-radius: 10px;
+  border-radius: var(--standard-border-radius);
   margin: 1rem 0 1.5rem 0;
   cursor: pointer;
 }

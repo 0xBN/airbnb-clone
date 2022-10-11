@@ -11,7 +11,7 @@
 }
 
 
-.rightCapacityAndHost>img {
+.rightCapacityAndHost>a>img {
   width: 60px;
   border-radius: 999px;
 }

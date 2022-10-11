@@ -1,21 +1,23 @@
 import React from 'react';
 import styles from './styles.module.css';
+import { ProfilePicture } from 'components';
 
 export const StayOverview = ({
   stayType,
-  hostName,
+  userName,
   guestCapacity,
   bedroomCount,
   bedCount,
   bathCount,
-  pic,
+  profilePicture,
+  userID,
 }) => {
   return (
     <div>
       <div className={styles.capacityAndHost}>
         <div className={styles.leftCapacityAndHost}>
           <div className={styles.sectionTitle}>
-            Entire {stayType} hosted by {hostName}
+            Entire {stayType} hosted by {userName}
           </div>
           <div className={styles.capacityDetails}>
             <div>{guestCapacity} guests</div>
@@ -34,7 +36,7 @@ export const StayOverview = ({
           </div>
         </div>
         <div className={styles.rightCapacityAndHost}>
-          <img src={pic} alt='' />
+          <ProfilePicture id={userID} img={profilePicture} />
         </div>
       </div>
     </div>

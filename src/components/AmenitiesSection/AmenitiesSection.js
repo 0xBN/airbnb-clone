@@ -14,9 +14,9 @@ export const AmenitiesSection = ({ amenities }) => {
   };
   return (
     <div className={styles.amenitiesSection}>
-      <div className={styles.sectionTitle}>What this place offers</div>
+      <div className='sectionTitle'>What this place offers</div>
       <div className={styles.amenities}>{show(amenities)}</div>
-      <button>Show all 48 amenities</button>
+      <button className={styles.amenitiesButton}>Show all 48 amenities</button>
     </div>
   );
 };

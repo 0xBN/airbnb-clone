@@ -1,0 +1,74 @@
+.container {
+
+}
+
+.hostHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.hostDetails {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  column-gap: var(--column-gap);
+}
+
+
+
+.hostHeaderRight>div:first-child {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.hostHeaderRight>div:nth-child(2) {
+  color: var(--subfont-color)
+}
+
+
+
+.hostHeaderLeft>a>img {
+  width: 65px;
+  border-radius: 999px;
+}
+
+.reviewsAndIdentity {
+  display: flex;
+  gap: 1rem;
+}
+
+.reviewsAndIdentity>div {
+  display: flex;
+  align-items: center;
+}
+
+.leftColumn,
+.rightColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+}
+
+.subTitle {
+  font-weight: bold;
+}
+
+.protectPayment {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: .7rem;
+  width: 60%;
+}
+
+.rightColumn>button {
+  background-color: transparent;
+  color: var(--font-color);
+  border: solid 1px var(--subfont-color);
+  height: 2.5rem;
+  width: 30%;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 10px;
+}

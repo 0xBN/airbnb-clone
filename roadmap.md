@@ -1,3 +1,26 @@
+Oct 9:
+
+- Most static CSS is done now and it's possible to navigate between Home, Listings, and user profiles
+- There's some reviews feature, but not all populated on each user page, this requires backend to be more cleaned up as dummy data was used to get going.
+
+--
+
+- Final features to add before moving on:
+
+0. List
+1. Animate skeleton loading, pulse gray
+2. Register and sign in: use firebase auth services
+3. Book a stay, i.e. choose date and total will calculate nights + any service or booking fees, choose number of guests. All dates will be assumed to be available for now.
+4. Check availability button will turn into reserve once dates are inputted
+5. Clicking reserve will take user to a page that states the trip details with a final "confirm and pay" reservation button
+6. Search bar functionality (just pop up modal for now)
+
+---
+
+---
+
+Launch Notes below:
+
 Page types:
 
 1. Home page
@@ -62,7 +85,7 @@ Main Features to cover:
 - View a host / user page
 - Create listings
 - Data Example for user and listing (root/exampleData.js)
-- Map (use GoogleMaps API)
+- Map (use GoogleMaps)
 
 What to work on (in order):
 
@@ -71,3 +94,5 @@ What to work on (in order):
 - User Page
 - Header / Nav
 - Footer
+
+Oct 9: Adding Features
