@@ -1,7 +1,16 @@
 import React from 'react';
 import styles from './styles.module.css';
 
-export const CalendarPicker = ({ city, minNights }) => {
+export const CalendarPicker = ({
+  city,
+  minNights,
+  setStartDate,
+  setEndDate,
+  setCurrentListing,
+  currentListingId,
+}) => {
+  const [date, setDate] = React.useState([]);
+
   let months = [
     'January',
     'February',
@@ -19,10 +28,56 @@ export const CalendarPicker = ({ city, minNights }) => {
   const d = new Date();
   const currentMonth = d.getMonth();
   const currentYear = d.getFullYear();
+  const handleClick = (e) => {
+    if (
+      !Number(e.target.textContent) > 0 &&
+      !Number(e.target.textContent) <= 31
+    )
+      return;
+
+    let day = e.target.textContent;
+    let monthYear =
+      e.target.parentElement.previousSibling.firstChild.nextSibling.textContent;
+
+    if (monthYear === 'arrow_forward_ios') {
+      monthYear = e.target.parentElement.previousSibling.firstChild.textContent;
+    }
+    const [month, year] = monthYear.split(' ');
+
+    let monthNum = months.indexOf(month);
+    let date = `${year}-${monthNum}-${day}`;
+    setDate((prevDate) => {
+      return [...prevDate, date];
+    });
+  };
+
+  React.useEffect(() => {
+    let currentDate = date[date.length - 1];
+    let previousDate = date[date.length - 2];
+
+    if (date.length === 0) {
+      setStartDate(null);
+      setEndDate(null);
+    }
+    if (date.length < 2) {
+      setStartDate(currentDate);
+      return;
+    }
+    if (date.length > 1) {
+      setStartDate(previousDate);
+      setEndDate(currentDate);
+    }
+    console.log('useeffectman', date.length);
+  }, [date, setStartDate, setEndDate]);
 
   return (
-    <div className={styles.container}>
+    <div
+      onClick={handleClick}
+      className={styles.container}
+      id='calendar-container'
+    >
       <div className={styles.sectionTitle}>Select checkin-in date</div>
+
       <div className={styles.minNights}>Minimum stay: {minNights} nights</div>
       {/* <div className={styles.sectionTitle}>X nights in {city}</div> */}
 
@@ -139,7 +194,7 @@ export const CalendarPicker = ({ city, minNights }) => {
       </div>
 
       <div className={styles.clearDates}>
-        <button>Clear dates</button>
+        <button onClick={() => setDate([])}>Clear dates</button>
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './styles.module.css';
-import { Shimmer } from 'skeleton';
+import { Shimmer, Pulse } from 'skeleton';
 
 export const SkeletonElement = ({ type, theme }) => {
   let skeletons = {
@@ -18,7 +18,8 @@ export const SkeletonElement = ({ type, theme }) => {
   return (
     <div className={styles.skeletonWrapper}>
       <div className={elementType}></div>
-      <Shimmer />
+      {/* <Shimmer /> */}
+      <Pulse />
     </div>
   );
 };

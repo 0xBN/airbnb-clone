@@ -4,20 +4,95 @@
   font-weight: bold;
   gap: 2rem;
   align-items: center;
+  position:relative;
+  max-width: 450px;
 }
 
-.profileButton {
-  color: var(--subfont-color);
-  border: solid 1px var(--subfont-color);
+.profilePicture {
+  display: flex;
+  /* background-color: blue; */
+  justify-content: right;
+  align-items: right;
+  justify-self: right;
+  flex-direction: column;
+}
+
+.profilePicture>img {
+  width: 2.5rem;
+  border-radius: 50%;
+  margin: 0 0 0 1rem;
+  /* align-self: center; */
+  /* justify-self: center; */
+}
+
+.menuTrigger {
   cursor: pointer;
   border-radius: 999px;
   padding: .3rem .3rem .3rem 1rem;
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 5px; 
 }
 
-.profileButton>span:nth-child(2) {
-  font-size: 40px;
 
+.menuTriggerInactive {
+  border: solid 1px var(--subfont-color);
+  color: var(--subfont-color);
+
+}
+
+.menuTriggerActive { 
+  border: solid 1px var(--font-color);
+  color: var(--font-color);
+}
+
+.menuTrigger>span:nth-child(2) {
+  font-size: 40px;
+}
+
+.dropDownMenu {
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+  top:calc(100% + .25rem);
+  left:0;
+  opacity: 0;
+  width: 100%;
+  border: solid 1px var(--font-color);
+  border-radius: 10px;
+  padding: 1rem;
+  font-weight: normal;
+  transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+}
+
+.dropDownMenuInactive {
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+}
+
+.dropDownMenuActive {
+  opacity: 1;
+  transform: translateY(0);
+  z-index: 2;
+  pointer-events: auto;
+}
+
+
+
+.dropDownMenu>ul {
+  list-style: none;
+}
+
+.dropDownMenu>ul>li {
+  padding: .75rem 0;
+  cursor: pointer;
+}
+
+.dropDownMenu>ul>li:hover {
+  color:red;
+}
+
+
+.dropDownMenu>ul>li:first-child {
+  font-weight: bold;
 }

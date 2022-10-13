@@ -22,3 +22,4 @@ export * from './HostSection';
 export * from './ThingsToKnow';
 export * from './ExtendedFooter';
 export * from './ProfilePicture';
+export * from './TestComponent';

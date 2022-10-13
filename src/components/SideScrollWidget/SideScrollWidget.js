@@ -3,8 +3,6 @@ import styles from './styles.module.css';
 import { SkeletonElement, SkeletonSideScrollWidget } from 'skeleton';
 
 export const SideScrollWidget = ({ data, scrollBar }) => {
-  console.log(scrollBar);
-
   const scroll = (e) => {
     const scroll_div = document.getElementById('scrollArea');
     e.target.textContent === 'arrow_circle_left'

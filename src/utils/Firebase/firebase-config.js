@@ -12,6 +12,7 @@ import {
   serverTimestamp,
 } from 'firebase/firestore';
 
+import { getAuth, GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
 // Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: 'AIzaSyBsDAjPMsKc-TWH-nqM9kp14LXGVVH4w2g',
@@ -24,6 +25,31 @@ const firebaseConfig = {
 
 // Initialize Firebase
 export const app = initializeApp(firebaseConfig);
+export const auth = getAuth(app);
+
+export const provider = new GoogleAuthProvider();
+
+export const signInWithGoogle = () => {
+  signInWithPopup(auth, provider)
+    .then((result) => {
+      console.log(result);
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+};
+
+export const signInWithGoogle2 = async () => {
+  try {
+    const result = await signInWithPopup(auth, provider);
+    const name = result.user.displayName;
+    const email = result.user.email;
+    const profilePic = result.user.photoURL;
+    return result;
+  } catch (error) {
+    console.log(error);
+  }
+};
 
 // Initialize services
 export const db = getFirestore(app);
@@ -33,7 +59,6 @@ export const listingsCollectionRef = collection(db, 'listings');
 export const scrollBarWidgetRef = collection(db, 'scrollBarWidget');
 export const usersCollectionRef = collection(db, 'users');
 export const userInteractions = collection(db, 'userInteractions');
-const testCollectionRef = collection(db, 'test');
 
 export const tempSet = () => {
   // Add userInteractions "Reviews"

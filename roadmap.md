@@ -7,13 +7,20 @@ Oct 9:
 
 - Final features to add before moving on:
 
-0. List
+0. To Do List
+1. Book a stay, i.e. choose date and total will calculate nights + any service or booking fees, choose number of guests. All dates will be assumed to be available for now.
+2. Check availability button will turn into reserve once dates are inputted
+3. Clicking reserve will take user to a page that states the trip details with a final "confirm and pay" reservation button
+4. Search bar functionality (just pop up modal for now)
+
+---
+
+---
+
+0. Done
 1. Animate skeleton loading, pulse gray
-2. Register and sign in: use firebase auth services
-3. Book a stay, i.e. choose date and total will calculate nights + any service or booking fees, choose number of guests. All dates will be assumed to be available for now.
-4. Check availability button will turn into reserve once dates are inputted
-5. Clicking reserve will take user to a page that states the trip details with a final "confirm and pay" reservation button
-6. Search bar functionality (just pop up modal for now)
+2. Close Modal when click away useRef? : https://www.youtube.com/watch?v=IF6k0uZuypA
+3. Register and sign in: use firebase auth services: https://www.youtube.com/watch?v=j9IT0E835B8
 
 ---
 

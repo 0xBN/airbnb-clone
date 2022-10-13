@@ -8,11 +8,15 @@ import {
   AirCover,
   AmenitiesSection,
   CalendarPicker,
-  CalendarPicker2,
 } from 'components';
 import { nanoid } from 'nanoid';
 
-export const ListingDetails = ({ listing_id, listingsData }) => {
+export const ListingDetails = ({
+  setStartDate,
+  setEndDate,
+  listing_id,
+  listingsData,
+}) => {
   // return;
   const { placeName, city, state, country, stayType, aboutLocation } =
     listingsData[listing_id].location;
@@ -24,7 +28,7 @@ export const ListingDetails = ({ listing_id, listingsData }) => {
 
   const { userName, profilePicture } = users[userID].user;
 
-  const { USDperNight, cleaningFee, serviceFee, minNights } =
+  const { USDperNight, cleaningFee, serviceFee, minNights, setCurrentListing } =
     listingsData[listing_id].cost;
 
   return (
@@ -72,7 +76,14 @@ export const ListingDetails = ({ listing_id, listingsData }) => {
         <hr />
         <AmenitiesSection amenities={listingsData[listing_id].amenities} />
         <hr />
-        <CalendarPicker city={city} minNights={minNights} />
+        <CalendarPicker
+          setStartDate={setStartDate}
+          setEndDate={setEndDate}
+          city={city}
+          minNights={minNights}
+          setCurrentListing={setCurrentListing}
+          currentListingId={listing_id}
+        />
       </div>
     </div>
   );

@@ -1,0 +1,103 @@
+.container {
+  display: flex;
+  gap: 100px;
+  margin-bottom: calc(var(--margin-bottom) + 1rem);
+}
+
+.checkoutLeft>h3 {
+  color: var(--font-color);
+  font-size: 2rem;
+}
+
+.yourTrip>div:first-child {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.yourTrip {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+
+.yourTrip>div:nth-child(2)>:first-child,
+.yourTrip>div:nth-child(3)>:first-child,
+.travelInsurance>div:first-child,
+.cancellation>div:first-child,
+.paySection>div:first-child
+{
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.terms {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.terms>button {
+  width: 250px;
+  height: 3rem;
+  background-color: var(--bright-accent);
+  color: white;
+  font-weight: bold;
+  border: none;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.checkoutRight {
+  position:relative;
+}
+
+.checkoutTotal {
+  border: solid 1px var(--subfont-color);
+  padding: 1rem;
+  border-radius: 10px;
+  position: sticky;
+  top: 8rem;
+}
+
+.propertyDetailsLeft {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+
+.checkoutImage>img {
+  width: 125px;
+  border-radius: 5px;
+}
+
+.reviewLine {
+  display: flex;
+  align-items: center;
+}
+
+.propertyDetailsRight {
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+}
+
+
+
+.airCoverLogo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.airCoverLogo>div:nth-child(1) {
+  color: red;
+
+}
+.airCoverLogo>div:nth-child(2) {
+  color: var(--font-color);
+}

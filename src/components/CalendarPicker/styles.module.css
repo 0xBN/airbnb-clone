@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   gap: var(--title-section-gap);
+  scroll-margin: 7rem;
 }
 
 

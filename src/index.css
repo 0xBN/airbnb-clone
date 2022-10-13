@@ -31,7 +31,7 @@ body {
 
 
   --max-width: 65vw;
-  --margin-bottom: 5vh;
+  --margin-bottom: 6vh;
   --margin-top: 11vh;
   --border-format: solid 1px white;
   --border-radius-search-bar: 999px;
@@ -82,11 +82,13 @@ body {
   --secondary-accent: #FF385C;
   --skeleton-lines: #333;
   --shimmer-color: rgba(160, 160, 160, 0.2);
+  --pulse-color: rgb(82, 82, 82);
+  --boxshadow-color:  rgba(255, 255, 255, 0.35);
   
-
+  
   /* Light Mode */
-
-  --background-color: white;
+  
+  /* --background-color: white;
   --font-color: black;
   --hover-font-color: rgba(0,0,0,.5);
   --subfont-color: gray;
@@ -96,6 +98,8 @@ body {
   --secondary-accent: black;
   --skeleton-lines: rgb(216, 216, 216);
   --shimmer-color: white;
+  --pulse-color: rgb(190, 190, 190);
+  --boxshadow-color:  rgba(0, 0, 0, 0.35); */
 
 
   background-color: var(--background-color);
@@ -124,3 +128,4 @@ button {
   /* margin-bottom: var(--title-section-gap); */
   margin-bottom: 1rem;
 }
+

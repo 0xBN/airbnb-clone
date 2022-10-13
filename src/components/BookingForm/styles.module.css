@@ -1,5 +1,4 @@
 .container {
-  /* background-color:gray; */
   min-width: var(--card-width);
   width: 100%;
   display: flex;
@@ -55,6 +54,7 @@ align-items: center;
   display: grid;
   grid-template-columns: repeat(2,1fr);
   width: 90%;
+  position:relative;
 }
 
 .checkIn,
@@ -63,7 +63,10 @@ align-items: center;
   flex-direction: column;
   border: 1px solid var(--thin-lines);
   padding: 1rem;
+  cursor: pointer;
+
 }
+
 
 .checkIn>div:first-child,
 .checkOut>div:first-child,
@@ -87,6 +90,18 @@ align-items: center;
 
 .checkOut {
   border-top-right-radius: var(--standard-border-radius);
+}
+
+.calendarPicker {
+  position: absolute;
+  background-color: var(--background-color);
+  box-shadow: var(--boxshadow-color) 0px 5px 15px;
+  width: 250%;
+  top:calc(100% - 5rem);
+  right: 0%;
+  z-index: 2;
+  padding: 1rem;
+  border-radius: 10px;
 }
 
 .guests {

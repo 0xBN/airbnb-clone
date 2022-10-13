@@ -1,3 +1,4 @@
+import React from 'react';
 import styles from './styles.module.css';
 import { useParams } from 'react-router-dom';
 import { SkeletonListingPage } from 'skeleton';
@@ -13,8 +14,23 @@ import {
   ExtendedFooter,
 } from 'components';
 
-export const Listing = ({ listingsData, usersData, reviewsData }) => {
+export const Listing = ({
+  listingsData,
+  usersData,
+  reviewsData,
+  startDate,
+  endDate,
+  setStartDate,
+  setEndDate,
+  setCurrentListing,
+  currentListing,
+}) => {
   const { listing_id } = useParams();
+
+  console.log(listingsData);
+  React.useEffect(() => {
+    setCurrentListing(listing_id);
+  }, [listing_id, setCurrentListing]);
 
   const pageLoaded =
     listingsData[listing_id] || Object.keys(usersData).length !== 0;
@@ -52,6 +68,9 @@ export const Listing = ({ listingsData, usersData, reviewsData }) => {
               <ListingDetails
                 listing_id={listing_id}
                 listingsData={listingsData}
+                setStartDate={setStartDate}
+                setEndDate={setEndDate}
+                setCurrentListing={setCurrentListing}
               />
             </div>
             <div className={[styles.bookingFormContainer].join(' ')}>
@@ -62,6 +81,9 @@ export const Listing = ({ listingsData, usersData, reviewsData }) => {
                   serviceFee={serviceFee}
                   rating={rating}
                   reviewCount={reviewCount}
+                  startDate={startDate}
+                  endDate={endDate}
+                  currentListing={currentListing}
                 />
                 <div className={styles.reportButton}>
                   <div className='material-icons'>flag</div>

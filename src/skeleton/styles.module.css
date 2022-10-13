@@ -271,7 +271,7 @@
 
 .skeletonWrapper {
   position:relative;
-  overflow:hidden;
+  /* overflow:hidden; */
 }
 
 .shimmer {
@@ -299,4 +299,22 @@
   100% {
     transform: translateX(1500%) rotate(-45deg);
   }
+}
+
+.pulse {
+  position: absolute;
+  top:0;
+  left:0;
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+  background-color: blue;
+  color:pink;
+  animation: pulsing 2s infinite  ;
+}
+
+@keyframes pulsing {
+  0% {background-color: var(--skeleton-lines);}
+  50% {background-color: var(--pulse-color);}
+  100% {background-color: var(--skeleton-lines);}
 }
