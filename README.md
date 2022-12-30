@@ -9,8 +9,8 @@ This project is a personal portfolio website used to showcase projects and share
 
 | Demo  | Desktop |
 | ----------- | ----------- |
-| Dark Mode | <img src="https://i.imgur.com/adg4VBy.gif" width="250px"/> |
-| Light Mode | <img src="https://i.imgur.com/RBtsfqS.gif" width="250px"/> |
+| Dark Mode | <img src="https://github.com/0xBN/gif_pub/blob/main/airbnb/navigateAirbnbDark.gif?raw=true" width="250px"/> |
+| Light Mode | <img src="https://github.com/0xBN/gif_pub/blob/main/airbnb/navigateAirbnbLight.gif?raw=true" width="250px"/> |
 | Skeleton Loading | <img src="https://i.imgur.com/N6Nd4QE.gif" width="250px"/> |
 
 
