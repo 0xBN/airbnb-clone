@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './styles.module.css';
-import { Shimmer, Pulse } from 'skeleton';
+import { Pulse } from 'skeleton';
 
 export const SkeletonElement = ({ type, theme }) => {
   let skeletons = {

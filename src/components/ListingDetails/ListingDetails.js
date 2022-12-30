@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './styles.module.css';
-import { listings as listings2, users } from '../../exampleData';
+import { users } from '../../exampleData';
 import {
   FeatureIcon,
   SleepArrangementSlides,
@@ -9,7 +9,6 @@ import {
   AmenitiesSection,
   CalendarPicker,
 } from 'components';
-import { nanoid } from 'nanoid';
 
 export const ListingDetails = ({
   setStartDate,
@@ -18,18 +17,16 @@ export const ListingDetails = ({
   listingsData,
 }) => {
   // return;
-  const { placeName, city, state, country, stayType, aboutLocation } =
-    listingsData[listing_id].location;
-  const { rating, reviews } = listingsData[listing_id].feedbackScore;
-  const images = listingsData[listing_id].images;
-  const { userID, pic } = listingsData[listing_id].host;
+  const { city, stayType, aboutLocation } = listingsData[listing_id].location;
+  // const { rating, reviews } = listingsData[listing_id].feedbackScore;
+  // const images = listingsData[listing_id].images;
+  const { userID } = listingsData[listing_id].host;
   const { guestCapacity, bedroomCount, bedCount, bathCount } =
     listingsData[listing_id].capacity;
 
   const { userName, profilePicture } = users[userID].user;
 
-  const { USDperNight, cleaningFee, serviceFee, minNights, setCurrentListing } =
-    listingsData[listing_id].cost;
+  const { minNights, setCurrentListing } = listingsData[listing_id].cost;
 
   return (
     <div className={styles.container}>

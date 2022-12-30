@@ -1,10 +1,9 @@
 import styles from './styles.module.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import { Home, Listing, NotFound, User, Checkout } from 'pages';
 import { Header, Footer, TestComponent } from 'components';
 import {
   tempSet,
-  tempAdd,
   listingsCollectionRef,
   scrollBarWidgetRef,
   usersCollectionRef,
@@ -13,7 +12,7 @@ import {
   provider,
 } from 'utils/Firebase';
 import React from 'react';
-import { collection, getDocs } from 'firebase/firestore';
+import { getDocs } from 'firebase/firestore';
 import {
   getRedirectResult,
   signInWithPopup,
@@ -127,9 +126,7 @@ export const App = () => {
     return window.location.pathname === '/' ? true : null;
   };
 
-  const getUserData = async () => {
-    const userData = await getRedirectResult(auth);
-  };
+  const getUserData = async () => await getRedirectResult(auth);
 
   getUserData();
 
@@ -145,7 +142,7 @@ export const App = () => {
         signout={signout}
         signin={signin}
       />
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path='/' element={<Home listingsData={listings} />} />
           <Route
@@ -183,7 +180,7 @@ export const App = () => {
           />
           <Route path='*' element={<NotFound />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
       <Footer />
     </div>
   );

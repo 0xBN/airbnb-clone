@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './styles.module.css';
-import { SideScrollWidget } from 'components';
+// import { SideScrollWidget } from 'components';
 import { nanoid } from 'nanoid';
 
 export const SleepArrangementSlides = ({ sleepArrangement }) => {

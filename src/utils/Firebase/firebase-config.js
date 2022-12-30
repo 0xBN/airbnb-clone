@@ -5,11 +5,11 @@ import { initializeApp } from 'firebase/app';
 import {
   getFirestore,
   collection,
-  getDocs,
+  // getDocs,
   addDoc,
   setDoc,
   doc,
-  serverTimestamp,
+  // serverTimestamp,
 } from 'firebase/firestore';
 
 import { getAuth, GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
@@ -42,9 +42,9 @@ export const signInWithGoogle = () => {
 export const signInWithGoogle2 = async () => {
   try {
     const result = await signInWithPopup(auth, provider);
-    const name = result.user.displayName;
-    const email = result.user.email;
-    const profilePic = result.user.photoURL;
+    // const name = result.user.displayName;
+    // const email = result.user.email;
+    // const profilePic = result.user.photoURL;
     return result;
   } catch (error) {
     console.log(error);

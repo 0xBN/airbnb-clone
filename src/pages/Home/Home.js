@@ -1,7 +1,7 @@
 import styles from './styles.module.css';
 import React from 'react';
 import { PropertyCard } from 'components';
-import { SkeletonElement, SkeletonHome } from 'skeleton';
+import { SkeletonHome } from 'skeleton';
 
 export const Home = ({ listingsData }) => {
   const show = (listings) => {

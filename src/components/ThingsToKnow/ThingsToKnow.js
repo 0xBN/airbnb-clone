@@ -6,9 +6,9 @@ export const ThingsToKnow = ({ rules }) => {
   const { checkin, checkout, selfCheckin, smokingAllowed, petsAllowed } =
     rules.rules;
 
-  const { covid, pool, carbonMonoxide, smokeAlarm } = rules.healthSafety;
+  // const { covid, pool, carbonMonoxide, smokeAlarm } = rules.healthSafety;
 
-  const { allowedCancellation, daysNoticeRequired } = rules.cancellation;
+  // const { allowedCancellation, daysNoticeRequired } = rules.cancellation;
 
   return (
     <div className={styles.container}>

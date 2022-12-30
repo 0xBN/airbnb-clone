@@ -30,7 +30,7 @@ font-weight: var(--section-title-fw);
 
 .pictureNameDate {
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   gap: 15px;
 }
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './styles.module.css';
-import { SkeletonElement, SkeletonSideScrollWidget } from 'skeleton';
+import { SkeletonSideScrollWidget } from 'skeleton';
 
 export const SideScrollWidget = ({ data, scrollBar }) => {
   const scroll = (e) => {
@@ -35,7 +35,7 @@ export const SideScrollWidget = ({ data, scrollBar }) => {
   };
 
   const isLoaded = data.length !== 0;
-  const loadSideScroll = true;
+  // const loadSideScroll = true;
 
   return (
     <div className={styles.container}>

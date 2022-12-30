@@ -92,7 +92,7 @@ font-weight: bold;
 .clearDates {
   /* background-color: pink; */
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .clearDates>button {

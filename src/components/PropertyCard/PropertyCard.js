@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './styles.module.css';
 import { nanoid } from 'nanoid';
-import { listings } from '../../exampleData';
+// import { listings } from '../../exampleData';
 
 export const PropertyCard = ({ images, id, listingsData }) => {
   const [favorite, setFavorite] = React.useState(false);

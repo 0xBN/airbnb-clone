@@ -2,8 +2,8 @@ import React from 'react';
 import styles from './styles.module.css';
 
 export const CalendarPicker2 = ({ city }) => {
-  const d = new Date();
-  let month = d.getMonth();
+  // const d = new Date();
+  // let month = d.getMonth();
   return (
     <div className={styles.container}>
       <div className={styles.doubleCalendarContainer}>

@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './styles.module.css';
-import { SkeletonElement, Shimmer } from 'skeleton';
+import { SkeletonElement } from 'skeleton';
 
 export const SkeletonListingPage = () => {
   const generateGallery = () => {
