@@ -1,6 +1,53 @@
-# Getting Started with Create React App
+# Airbnb Frontend Clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a frontend clone of Airbnb with a Firebase backend which holds listings data. 
+
+
+This project is a personal portfolio website used to showcase projects and share relevant experience. It is open sourced and can be forked. Users only need to edit a json file with relevant data (see section: How To Use).
+
+## Demonstration
+
+| Demo  | Desktop |
+| ----------- | ----------- |
+| Dark Mode | <img src="https://i.imgur.com/adg4VBy.gif" width="250px"/> |
+| Light Mode | <img src="https://i.imgur.com/RBtsfqS.gif" width="250px"/> |
+| Skeleton Loading | <img src="https://i.imgur.com/N6Nd4QE.gif" width="250px"/> |
+
+
+
+## Purpose
+I built this to learn React fundamentals of reuseable components, routing and props. 
+
+It was also my introduction to a NoSQL database, specifically Firebase. I learned how to use CRUD methods on these documents. 
+
+Additionally, I refined HTML skills: flexbox, margin, padding, sticky elements, skeleton loading.
+
+The actualy booking system is still to be continued.
+
+## Skills Demonstrated
+- **React**: First "big" project using React for routing between homepage, a user page and a listing. I learned how to work in a component-focused manner. 
+- **Data** structure: Learned what is necessary and how to structure the data of a listing. This way the app can be easily extended  by users (adding listings, comments etc) as well as interactions between users.
+- **Firebase** (NoSql): CRUD methods on documents
+- **GoogleMaps API**: Coordinates from a listing will pinpoint location on GoogleMaps
+- **CSS**: Flexbox, grid, organize CSS based on components, i.e. limit name clashing
+
+## Tech Stack
+- [ React ](https://github.com/facebook/create-react-app): Frontend
+- [Github](https://github.com/): Deployment
+- [Firebase](https://firebase.google.com//): Listings Database
+  
+
+
+## Notable Features
+- Skeleton loading
+- Scroll widget for property features
+- Listing page interface is 1:1 with airbnb as of Nov 2022.
+
+
+
+## Icons
+- https://fonts.google.com/
+
 
 ## Available Scripts
 
@@ -11,13 +58,6 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
@@ -27,44 +67,9 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+How to deploy documentation: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
