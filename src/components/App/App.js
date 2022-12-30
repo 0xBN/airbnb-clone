@@ -1,5 +1,5 @@
 import styles from './styles.module.css';
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Home, Listing, NotFound, User, Checkout } from 'pages';
 import { Header, Footer, TestComponent } from 'components';
 import {
@@ -142,7 +142,7 @@ export const App = () => {
         signout={signout}
         signin={signin}
       />
-      <HashRouter>
+      <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home listingsData={listings} />} />
           <Route
@@ -180,7 +180,7 @@ export const App = () => {
           />
           <Route path='*' element={<NotFound />} />
         </Routes>
-      </HashRouter>
+      </BrowserRouter>
       <Footer />
     </div>
   );
