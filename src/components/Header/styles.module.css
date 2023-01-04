@@ -24,6 +24,22 @@ grid-template-rows: repeat(2,1fr);
 align-items: center;
 }
 
+.headerNav2 {
+  max-width: var(--max-width);
+  margin:auto;
+  display: flex;
+  /* border: solid 1px magenta; */
+  justify-content: space-between;
+  /* display: grid; */
+  /* grid-template-columns: repeat(3,1fr); */
+  /* grid-template-rows: repeat(2,1fr); */
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
 
 
 .logo img {

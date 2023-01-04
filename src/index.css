@@ -53,7 +53,7 @@ body {
   --section-title-fs: 1.2rem;
   
   /* Listing Gallery Stuff */
-  --gap-gallery: .5rem;
+  --gap-gallery: .5em;
 
   /* OG settings */
   /* --gallery-container-width: 810px; */
@@ -133,3 +133,8 @@ button {
   margin-bottom: 1rem;
 }
 
+@media (max-width: 1200px) {
+  body {
+    --gap-gallery: .2em;
+  }
+}

@@ -1,9 +1,13 @@
 .container {
   display: flex;
   flex-direction: column;
-  max-width: var(--max-width);
   gap: 1rem;
   margin-bottom: var(--margin-bottom);
+  padding: 5vw;
+  /* border:solid 1px magenta; */
+    
+  /* temp */
+    /* width: 90vw; */
 }
 
 .mainGrid {
@@ -11,7 +15,9 @@
   grid-template-columns: 1.1fr .6fr;
   grid-template-rows: repeat(1, 1fr);
   gap: 25px;
-  /* height: 200vh; */
+  display: flex;
+  
+
 }
 
 .temporarySquare {
@@ -25,16 +31,14 @@
 
 }
 
-.cat {
-  background-color: darkblue;
-}
-
 .listingDetails {
-
+  width: 50%;
 }
 
 .bookingFormContainer {
-  /* background-color: purple; */
+  position: sticky;
+  top: calc(var(--margin-top) + 5vh);
+  /* bottom: 1em; */
   grid-column: 2/ -1;
   grid-row: 1 /-1;
   align-self: start;
@@ -42,7 +46,8 @@
   height: 100%;
   width: 100%;
   min-width: 200px;
-  padding-bottom: calc(var(--margin-bottom) + 5vh);  
+  padding-bottom: 60vw;
+  /* padding-bottom: calc(var(--margin-bottom) + 5vh);   */
 }
 
 
@@ -100,4 +105,16 @@ hr {
   /* opacity: .2; */
   margin-top: var(--title-section-gap);
   margin-bottom: var(--title-section-gap);
- }
+}
+
+@media (max-width: 900px) {
+  .mainGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .listingDetails {
+    width: 100%;
+  }
+}

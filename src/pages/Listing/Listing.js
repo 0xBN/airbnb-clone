@@ -93,6 +93,7 @@ export const Listing = ({
             </div>
           </div>
           <hr />
+
           <div className={styles.reviewsSection}>
             {!pageLoaded && (
               <ReviewSection

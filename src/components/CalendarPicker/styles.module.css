@@ -3,8 +3,8 @@
   flex-direction: column;
   gap: var(--title-section-gap);
   scroll-margin: 7rem;
-}
 
+}
 
 .sectionTitle {
   font-weight:var(--section-title-fw);
@@ -22,8 +22,9 @@
   row-gap: 30px;
   align-items: center;
   justify-items: center;
-  width: 90%;
+  width: 90vw;
   margin:0;
+  overflow: scroll;
 }
 
 
@@ -33,6 +34,7 @@
   flex-direction: column;
   width: 100%;
   gap: var(--horizontal-gap);
+  
 }
 
 .calendarGrid {
@@ -107,3 +109,13 @@ font-weight: bold;
 
 
 
+@media (max-width: 530px) {
+  body {
+    /* border: 1px solid magenta; */
+  }
+
+  .doubleCalendarContainer {
+    display: flex;
+    flex-direction: column;
+  }
+}

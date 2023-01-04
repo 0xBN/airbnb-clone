@@ -20,3 +20,13 @@
   display: flex;
   gap: var(--horizontal-gap);
 }
+
+
+@media (max-width: 530px) {
+  .dots {
+    display: none;
+  }
+  .sectionTitle {
+    font-size: 1rem;
+  }
+}

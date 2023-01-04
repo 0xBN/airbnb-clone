@@ -16,3 +16,12 @@
 .column4>div {
   margin-bottom: 1rem;
 }
+
+@media (max-width: 880px) {
+  .columnsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    /* border: solid 1px magenta; */
+  }
+}

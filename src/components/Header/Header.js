@@ -12,7 +12,11 @@ export const Header = ({
 }) => {
   return (
     <div className={styles.container}>
-      <div className={styles.headerNav}>
+      <div
+        className={[showSlider ? styles.headerNav : styles.headerNav2].join(
+          ' '
+        )}
+      >
         <div className={styles.logo}>
           <a href='/'>
             <img src={logo} alt='' />
@@ -29,11 +33,24 @@ export const Header = ({
             signin={signin}
           />
         </div>
-        {showSlider && (
-          <div className={styles.sideScroll}>
+        <div
+          className={[
+            styles.sideScroll,
+            showSlider ? null : styles.hidden,
+          ].join(' ')}
+        >
+          <SideScrollWidget data={scrollBar} />
+        </div>
+        {/* {showSlider && (
+          <div
+            className={[
+              styles.sideScroll,
+              showSlider ? null : styles.hidden,
+            ].join(' ')}
+          >
             <SideScrollWidget data={scrollBar} />
           </div>
-        )}
+        )} */}
       </div>
     </div>
   );

@@ -21,15 +21,15 @@ export const StayOverview = ({
           </div>
           <div className={styles.capacityDetails}>
             <div>{guestCapacity} guests</div>
-            <div>·</div>
+            <div className={styles.dots}>·</div>
             <div>
               {bedroomCount} bedroom{bedroomCount > 1 ? 's' : null}
             </div>
-            <div>·</div>
+            <div className={styles.dots}>·</div>
             <div>
               {bedCount} bed{bedCount > 1 ? 's' : null}
             </div>
-            <div>·</div>
+            <div className={styles.dots}>·</div>
             <div>
               {bathCount} bath{bathCount > 1 ? 's' : null}
             </div>

@@ -18,3 +18,11 @@ font-size: 1.1rem;
 font-weight: 600;
 
 }
+
+@media (max-width: 880px) {
+  .columnsContainer {
+    display: flex;
+    flex-direction: column;
+    /* border: solid 1px magenta; */
+  }
+}

@@ -5,6 +5,7 @@
 }
 
 
+
 .placeDetailsRight,
 .placeDetailsLeft {
   display: flex;
@@ -33,3 +34,29 @@
   display: flex;
 }
 
+@media (max-width: 725px) {
+  body {
+    /* border: solid 2px red; */
+  }
+
+  .dots {
+    display: none;
+  }
+  .placeDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: .75rem;
+  }
+
+  .placeName {
+    text-align: center;
+    font-size: 2rem;
+    margin:0;
+    padding:0;
+
+    width: 90vw;
+  }
+
+}

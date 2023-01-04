@@ -11,16 +11,16 @@ export const StayHeader = ({
 }) => {
   return (
     <div>
-      <h1>{placeName}</h1>
+      <h1 className={styles.placeName}>{placeName}</h1>
       <div className={styles.placeDetails}>
         <div className={styles.placeDetailsLeft}>
           <div className={styles.rating}>
             <span className={`${styles.star} material-icons`}>star</span>
             {rating}
           </div>
-          <div>·</div>
+          <div className={styles.dots}>·</div>
           <div>{reviewCount} reviews</div>
-          <div>·</div>
+          <div className={styles.dots}>·</div>
           <div>
             {city}, {state}, {country}
           </div>
