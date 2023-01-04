@@ -32,7 +32,7 @@ export const ExtendedFooter = () => {
         <div className={styles.column4}>
           <div className={styles.columnTitle}>Airbnb</div>
           <div>Newsroom</div>
-          <div>Learnabout new features</div>
+          <div>Learn about new features</div>
           <div>Letter from our founders</div>
           <div>Careers</div>
           <div>Investors</div>
