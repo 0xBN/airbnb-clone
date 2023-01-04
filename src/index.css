@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
@@ -32,7 +36,7 @@ body {
 
   --max-width: 65vw;
   --margin-bottom: 6vh;
-  --margin-top: 11vh;
+  --margin-top: 5vh;
   --border-format: solid 1px white;
   --border-radius-search-bar: 999px;
   --border-radius-gallery: 15px;
@@ -104,7 +108,7 @@ body {
 
   background-color: var(--background-color);
   color: var(--font-color);
-  max-width: var(--max-width);
+  /* max-width: var(--max-width); */
   margin: auto;
 
 }

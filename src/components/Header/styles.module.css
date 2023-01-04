@@ -3,14 +3,16 @@
   /* top:0; */
   /* left:0; */
   /* width: 100vw; */
-  max-width: var(--max-width);
+  /* max-width: var(--max-width); */
   background-color: var(--background-color);
   height: var(--header-height);
   /* padding: 2rem 0; */
   z-index: 1;
   position: sticky;
   top:0;
+  padding: 1em;
   margin-top: 1rem;
+  width: 100vw;
 }
 
 .headerNav {
@@ -45,4 +47,20 @@ align-items: center;
   align-self: center;
   text-align: center;
   
+}
+
+@media (max-width: 1200px) {
+  .sideScroll {
+    display: none;
+  }
+
+  .searchButton {
+    display: none;
+  }
+
+  .headerNav {
+    /* border: solid 3px orange; */
+    display: flex;
+    justify-content: space-between;
+  }
 }

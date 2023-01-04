@@ -27,7 +27,9 @@ export const Home = ({ listingsData }) => {
       {listingReady === 0 && <SkeletonHome count={20} />}
       {listingReady !== 0 && (
         <>
-          <div className={styles.propertyCards}>{show(listingsData)}</div>
+          <div className={[styles.propertyCards].join(' ')}>
+            {show(listingsData)}
+          </div>
           <div className={styles.showMap}>
             <button>
               Show Map <span className='material-symbols-outlined'>map </span>

@@ -4,6 +4,7 @@ export const Footer = () => {
   return (
     <div className={styles.container}>
       <div className={styles.footerContent}>
+        <div className={styles.mobileSmallFooter}>© 2022 Airbnb, Inc.</div>
         <div className={styles.left}>
           <ul>
             <li>© 2022 Airbnb, Inc.</li>

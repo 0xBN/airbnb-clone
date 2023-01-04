@@ -40,3 +40,35 @@
   gap: .15rem;
   align-items: center;
 }
+
+.mobileSmallFooter {
+  display: none;
+}
+
+
+@media (max-width: 1350px) {
+
+  .right {
+    display: none;
+  }
+
+}
+
+@media (max-width: 680px) {
+
+
+  .right {
+    display: none;
+  }
+
+  .left {
+    display: none;
+  }
+
+  .mobileSmallFooter {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+}

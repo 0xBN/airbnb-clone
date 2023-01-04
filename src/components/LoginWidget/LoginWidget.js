@@ -32,10 +32,12 @@ export const LoginWidget = ({
 
   return (
     <div className={styles.container} ref={menuRef}>
-      <div>Become a Host</div>
-      {/* {isLoggedIn && <div>Welcome, {currentUser?.displayName}</div>} */}
-      <div>
-        <span className='material-symbols-outlined'>language</span>
+      <div className={styles.leftLoginWidget}>
+        <div>Become a Host</div>
+        {/* {isLoggedIn && <div>Welcome, {currentUser?.displayName}</div>} */}
+        <div>
+          <span className='material-symbols-outlined'>language</span>
+        </div>
       </div>
       <div
         className={[
