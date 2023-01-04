@@ -38,9 +38,6 @@ export const User = ({ listingsData, users }) => {
   };
 
   const show = (listings) => {
-    console.log('answer', listingsData);
-    console.log(Object.keys(listingsData).length === 0);
-    // if (Object.keys(listingsData).length === 0) return;
     let list = [];
     listings.forEach((listingId) => {
       const picture = listingsData[listingId].images[0];
@@ -128,8 +125,6 @@ export const User = ({ listingsData, users }) => {
             {userName}'s listing{listings.length === 1 ? null : 's'}
           </div>
           <div className={styles.listingContainer}>{show(listings)}</div>
-
-          <hr />
         </div>
       </div>
       <hr />

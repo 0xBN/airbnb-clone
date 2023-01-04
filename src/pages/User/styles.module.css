@@ -1,5 +1,7 @@
 .container {
   margin-bottom: var(--margin-bottom);
+  padding: 2em;
+
 }
 
 .profileContainer {
@@ -111,3 +113,59 @@
   gap: .5rem
 }
 
+@media (max-width: 1330px) {
+  .columnsContainer {
+
+    /* border: solid 1px magenta; */
+  }
+
+  .listingContainer{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .listings>a>img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+}
+
+
+@media (max-width: 800px) {
+
+  .profileContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .leftSide {
+    display: flex;
+    width: 100%;
+    /* border: solid 1px magenta; */
+    align-items: center;
+    justify-content: center;
+  }
+
+  .leftSideBox {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .profilePicture {
+    padding: 0 1em 0 0;
+    display: flex;
+    justify-content: center;
+  }
+
+
+}
+
+@media (max-width: 540px) {
+  .leftSideBox {
+    width: 100%;
+    display: block;
+    align-items: center;
+  }
+}
